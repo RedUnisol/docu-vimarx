@@ -1,9 +1,11 @@
-import Tag from '@site/src/components/HomepageFeatures/Tag';
-
 ---
 sidebar_position: 1
 sidebar_label: Categorias de socios
 ---
+
+import Tag from '@site/src/components/HomepageFeatures/Tag';
+
+
 # Categoria de socios 👨‍👩‍👧‍👦
 
 :::tip[Categorías de socios]

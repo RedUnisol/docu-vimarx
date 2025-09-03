@@ -21,7 +21,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/category/modulos">
-            Aprende a usar nuestro ERP ⏱️
+            Domina nuestro ERP ahora ⏱️
           </Link>
         </div>
       </div>
@@ -37,6 +37,7 @@ export default function Home(): ReactNode {
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
       <main>
+        <h1>¿Que te ofrecemos?</h1>
         <HomepageFeatures />
       </main>
     </Layout>

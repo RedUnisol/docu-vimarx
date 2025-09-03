@@ -28,3 +28,76 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.details-grid details {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+  border-radius: 6px;
+  /* box-shadow: 0 1px 2px rgba(0,0,0,0.05); */
+  transition: box-shadow 0.2s ease;
+}
+.details-grid details:hover {
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+.module-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.workflow-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.workflow-steps .step {
+  display: flex;
+  background: #f3f4f6; 
+  padding: .5rem; 
+  padding-top: 1.5rem;
+  border-Radius: 8px; 
+  box-shadow: 0 6px 4px rgba(0,0,0,0.06);
+  border-left: #0078d4 4px solid;
+}
+
+.roles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.checklist {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1rem;
+}
+
+.checklist li {
+  position: relative;
+  padding-left: 1.8rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.checklist li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #0078d4;
+  font-weight: bold;
+}
+
+

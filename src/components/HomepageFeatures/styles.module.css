@@ -5,7 +5,20 @@
   width: 100%;
 }
 
-.featureSvg {
+/* Cada feature empieza oculto */
+.feature {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Cuando es visible */
+.feature.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.featureImg {
   height: 200px;
   width: 200px;
 }

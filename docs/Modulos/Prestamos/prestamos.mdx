@@ -1,0 +1,268 @@
+---
+sidebar_position: 2
+sidebar_label: Prestamos
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+import Card from "@site/src/components/HomepageFeatures/UI/Card.tsx";
+
+# Prestamos
+
+:::info[ROL DE PRESTAMOS]
+El Módulo de Préstamos concentra la operación diaria sobre la cartera crediticia: desde el alta (iniciada idealmente a partir de una Solicitud aprobada) hasta el desembolso, el seguimiento y la cobranza mediante Procesos Débitos. Esta introducción explica qué resuelve, cómo se integra con el resto del sistema y cómo interpretar su pantalla principal para trabajar de manera ordenada y consistente.
+:::
+
+## 1. Panorama funcional e integración
+<div className="module-cards">
+  <Card title="Visibilidad unificada" icon="👁️">
+    <p>Lista los préstamos vigentes con sus datos clave.</p>
+  </Card>
+  <Card title="Acciones operativas" icon="⚙️">
+    <p>Consultar saldos, registrar cobros, revisar adjuntos, etc.</p>
+  </Card>
+  <Card title="Integración natural" icon="🔗">
+    <ul>
+      <li>
+        <strong>Solicitudes:</strong> origen recomendado del préstamo.
+      </li>
+      <li>
+        <strong>Liquidaciones:</strong> cobranza masiva por cuotas.
+      </li>
+      <li>
+        <strong>Contabilidad:</strong> asiento de alta y conciliaciones.
+      </li>
+      <li>
+        <strong>Compliance:</strong> adjuntos y Rangos para reportes.
+      </li>
+    </ul>
+  </Card>
+ </div>  
+
+## 2. Flujo de trabajo de punta a punta
+
+<div className="workflow-steps">
+  <div className="step">
+    <strong>1.</strong> **Solicitud → Análisis → Aprobación**
+  </div>
+  <div className="step">
+    <strong>2.</strong> **Emisión y desembolso**
+  </div>
+  <div className="step">
+    <strong>3.</strong> **Seguimiento**
+  </div>
+  <div className="step">
+    <strong>4.</strong> **Cobranza**
+  </div>
+  <div className="step">
+    <strong>5.</strong> **Cierre**
+  </div>
+</div>
+
+### Conceptos clave del flujo
+
+| Concepto                | Descripción                                                                          |
+| ----------------------- | ------------------------------------------------------------------------------------ |
+| **Fecha de Trabajo**    | Corte temporal para vencimientos, devengamientos y saldos.                           |
+| **Cuota 0**             | Estructura inicial con cargos administrativos; puede diferir del monto desembolsado. |
+| **Cobrador**            | Entidad responsable de la gestión de cobro.                                          |
+| **Cartera y Denuncias** | Agrupadores operativos para gestión y reportes.                                      |
+| **Link de aceptación**  | Evidencia del consentimiento del titular.                                            |
+| **Movimiento AMV**      | Referencia de control interno para integraciones y conciliaciones.                   |
+
+## 3. Estructura de la pantalla principal
+
+:::info[Planilla general (primera pestaña)]
+Muestra todos los préstamos vigentes. Desde esta grilla se puede consultar, filtrar (ver 1.4), navegar al detalle del préstamo (pestañas) y accionar mediante la barra superior. Aunque es posible generar un préstamo desde aquí, la práctica recomendada es iniciarlo desde Solicitud.
+:::
+:::info[Barra superior (acciones frecuentes)]
+Grabar/Enviar, Anular, Generar Préstamo, Cambiar estado y Desembolsar (la disponibilidad depende de permisos y parametrización).
+:::
+:::info[Columnas principales (lectura rápida)]
+Estado, Titular, N.º de Solicitud (vínculo al origen), Línea, Comercializador, Emisión digital, Fecha(s) de emisión, Destino, Asiento contable, Períodos de movimientos, Cobrador y Detalle de cuotas.
+:::
+
+## 4. Filtros operativos
+
+| **Filtro**                 | **Descripción**                                                     |
+| -------------------------- | ------------------------------------------------------------------- |
+| Vigentes                   | Préstamos dentro del cronograma original                            |
+| Impagos                    | Préstamos con cuotas vencidas no canceladas                         |
+| Pagados                    | Préstamos cancelados totalmente                                     |
+| Vencidos                   | Préstamos cuya fecha de finalización supera la **Fecha de Trabajo** |
+| Emitidos hoy / Pagados hoy | Actividad del día (según **Fecha de Trabajo**)                      |
+| Todos                      | Sin restricción de estado                                           |
+| Adicionales                | Por **Cartera** y, si corresponde, por **Denuncias**                |
+
+:::warning[Importante]
+**Chequeo previo**: confirme la **Fecha de Trabajo** antes de interpretar vencidos, devengamientos y saldos.
+:::
+
+## 5. Detalle del préstamo: pestañas y usos
+<div className="details-grid">
+<details>
+  <summary><strong>Detalle / Cuotas</strong></summary>
+
+Cronograma, estados e importes de cada cuota.
+
+</details>
+
+<details>
+  <summary><strong>Novedades</strong></summary>
+
+Registra cargos iniciales según la Línea de Préstamos y otros eventos del crédito.
+
+</details>
+
+<details>
+  <summary><strong>Adjuntos</strong></summary>
+
+Documentación cargada por comercializador y analista; base para auditorías.
+
+</details>
+
+<details>
+  <summary><strong>Cobros</strong></summary>
+
+Incluye la Cuota 0 y la estructura de liquidación; consulta y registro de pagos.
+
+</details>
+
+<details>
+  <summary><strong>Movimientos (Cuenta Corriente)</strong></summary>
+
+Visión contable/operativa del crédito.
+
+</details>
+
+<details>
+  <summary><strong>Tasas del préstamo</strong></summary>
+
+Tasas vigentes aplicadas al caso.
+
+</details>
+
+<details>
+  <summary><strong>Documentación</strong></summary>
+
+Reservado (sin uso operativo definido actualmente).
+
+</details>
+
+<details>
+  <summary><strong>Saldos</strong></summary>
+
+Lectura focalizada de capital, intereses, devengado y total a la Fecha de Trabajo.
+
+</details>
+
+<details>
+  <summary>
+    <strong>Estructuración de Rangos (Res. 1418)</strong>
+  </summary>
+  <ul>
+    <li>
+      <strong>R1:</strong> vencimientos del próximo mes.
+    </li>
+    <li>
+      <strong>R2:</strong> vencimientos de los próximos dos meses.
+    </li>
+    <li>
+      <strong>R3:</strong> vencimientos hasta seis meses.
+    </li>
+    <li>
+      <strong>R4:</strong> vencimientos a 180 días.
+    </li>
+    <li>
+      <strong>R5:</strong> vencimientos mayores a 180 días.
+    </li>
+  </ul>
+</details>
+
+<details>
+  <summary><strong>Otros datos</strong></summary>
+
+CFT, alícuotas de sellado y parámetros complementarios.
+
+</details>
+
+<details>
+  <summary><strong>Garantías</strong></summary>
+
+No aplican a líneas sin garantía real; si se habilitan líneas prendarias o hipotecarias, se integra con el submódulo correspondiente.
+
+</details>
+
+<details>
+  <summary><strong>Procesos Débitos</strong></summary>
+
+Consulta del histórico de cargas masivas aplicadas al crédito.
+
+</details>
+
+<details>
+  <summary><strong>Comisiones de vendedores</strong></summary>
+
+Cálculo de comisiones asociadas.
+
+</details>
+
+<details>
+  <summary><strong>Trámites</strong></summary>
+
+Registro de gestiones (por ejemplo, demoras) y su tratamiento.
+
+</details>
+
+<details>
+  <summary><strong>Indicadores de encuentro / Pagos de encuentros</strong></summary>
+
+No utilizados actualmente.
+
+</details>
+
+<details>
+  <summary><strong>Comprobantes</strong></summary>
+
+Se emplea cuando el crédito interviene en pagos de facturas (emisión o vinculación).
+
+</details>
+</div>
+
+## 6. Roles y responsabilidades
+<div class="roles-grid">
+  <Card title="Comercial / Analista" icon="👤">
+    <p>Consulta integral, verificación de adjuntos y seguimiento posterior al desembolso.</p>
+  </Card>
+  <Card title="Cobranzas" icon="💸">
+    <p>Control de Cobrador, monitoreo de impagos/vencidos y resultados de Procesos Débitos.</p>
+  </Card>
+  <Card title="Contabilidad / Tesorería" icon="📊">
+    <p>Conciliación de Movimientos y Comprobantes; control de Cuota 0 y cargos.</p>
+  </Card>
+  <Card title="Compliance / Auditoría" icon="🔍">
+    <p>Verificación de documentación, aceptación de la propuesta y Rangos para reportes regulatorios.</p>
+  </Card>
+</div>
+
+## Buenas prácticas y chequeos previos
+<ul class="checklist">
+  <li>
+    Confirmar la <strong>Fecha de Trabajo</strong> antes de cualquier análisis.
+  </li>
+  <li>
+    Priorizar el alta desde <strong>Solicitud aprobada</strong> para asegurar
+    trazabilidad.
+  </li>
+  <li>
+    Verificar que el <strong>Cobrador</strong> esté asignado y validado.
+  </li>
+  <li>
+    Revisar <strong>Novedades</strong> y <strong>Cuota 0</strong> para confirmar
+    cargos administrativos.
+  </li>
+  <li>
+    Utilizar la <strong>Estructuración de Rangos</strong> conforme a la Res.
+    1418.
+  </li>
+</ul>

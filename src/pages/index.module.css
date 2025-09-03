@@ -6,8 +6,19 @@
 .heroBanner {
   padding: 4rem 0;
   text-align: center;
-  position: relative;
-  overflow: hidden;
+  aspect-ratio: 16 / 5.5;
+  background-image: linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.1)), url('/img/imagen_banner.jpg');
+  background-size: cover;
+  background-position: center 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: brightness(0.95) contrast(1.05);
+  opacity: 0;
+  animation: fadeIn 1.2s ease-out forwards;
+}
+@keyframes fadeIn {
+  to { opacity: 1; }
 }
 
 @media screen and (max-width: 996px) {
@@ -15,9 +26,27 @@
     padding: 2rem;
   }
 }
-
+@media (max-width: 768px) {
+  .heroBanner {
+    aspect-ratio: auto;
+    height: 60vh;
+    background-position: center 30%;
+    padding: 1.5rem;
+  }
+}
 .buttons {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
+main > h1 {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 2.5rem;
+  margin-top: 2.5rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 2px solid #333;
+  background-color: red
+}
+

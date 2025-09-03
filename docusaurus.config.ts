@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'VIMARX',
-  tagline: 'El ERP que NECESITAS',
+  tagline: 'Gestión fácil, rápida y segura',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -107,7 +107,7 @@ const config: Config = {
           ],
         },
         {
-          title: 'Community',
+          title: 'Faq',
           items: [
             {
               label: 'Stack Overflow',

@@ -22,6 +22,5 @@ const Tag: React.FC<TagProps> = ({ color, children }) => {
     </span>
   );
 };
-
 export default Tag;
 

@@ -28,6 +28,32 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+/* estilos de docusaurus.config */
+/* Cambiar color del título y subtítulo del Hero */
+.hero__title {
+  color: #ffffff !important;
+}
+
+.hero__subtitle {
+  color: #f1f1f1 !important;
+}
+
+/* Cambiar el color del botón si quieres */
+.button.button--secondary {
+  background-color: #1eae5a;
+  color: white;
+  font-size: 18px;
+  padding: 6px 24px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+.button.button--secondary:hover {
+  background-color: #009624;
+}
+/* .navbar {
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+} */
 
 .details-grid {
   display: grid;

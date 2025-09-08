@@ -1,4 +1,4 @@
-import Tag from '@site/src/components/HomepageFeatures/Tag';
+import Tag from '@site/src/components/HomepageFeatures/UI/Tag';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 

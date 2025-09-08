@@ -3,80 +3,105 @@ sidebar_position: 0
 sidebar_label: Socios mutual
 ---
 
-# Socios 👪
+# 👪 Socios
 
-:::tip[Rol del Sistema]
- El Módulo Socios es el núcleo central de VIMARX desde el cual se estructura y administra toda la información de los asociados de la entidad.
-Actúa como base troncal que concentra, organiza y vincula datos personales, comerciales, documentales y operativos de cada socio, permitiendo su integración con el resto de los módulos del sistema.
+:::tip Rol del Sistema
+El módulo **Socios** es el corazón operativo de **VIMARX**. Desde aquí se estructura, administra y vincula toda la información de los asociados, funcionando como base troncal que conecta datos personales, comerciales, documentales y operativos.
+
+Su diseño permite una integración fluida con el resto de los módulos del sistema, garantizando trazabilidad, seguridad y visión institucional.
 :::
 
-## 1. Procesos principales
-* **Alta de nuevos socios**: Registro inicial con datos básicos y documentación respaldatoria.
+---
 
-* **Definición de categoría o tipo de socio**: Según criterios internos o normativos.
+## 🔧 1. Procesos Principales
 
-* **Baja de socios**: Por renuncia, fallecimiento, expulsión o inactividad.
-
-* **Análisis de PLA/FT**: Ejecución de procedimientos de identificación, perfilado y validaciones según listas de control.
-
-* **Organización de la base de datos**: Estructuración y mantenimiento actualizado de registros.
-
-* **Consultas y reportes**: Acceso a información individual o masiva para toma de decisiones.
-
-## 2. Estructura de datos
-**La información se divide en dos grandes grupos**:
-
-### 2.1. Datos básicos
-* Nombre y apellido.
-
-* Documento (DNI/CUIT).
-
-* Dirección.
-
-* Teléfonos y correo electrónico.
-
-### 2.2. Datos específicos
-**Para personas físicas**:
-
-* Actividad principal.
-
-* Situación laboral (relación de dependencia, monotributo, autónomo).
-
-* Ingresos y situación económica.
-
-* Datos laborales y referencias.
-
-**Para personas jurídicas**:
-
-* Razón social y CUIT.
-
-* Objeto social.
-
-* Composición societaria.
-
-* Autoridades y apoderados.
-
-* Información económica y patrimonial.
-
-## 3. Funciones de consulta
-:::tip[Consultas]
-El módulo permite búsquedas y visualizaciones de la información de socios por múltiples criterios (nombre, documento, teléfono, categoría, etc.).
+:::info Flujo operativo
+Cada proceso está orientado a mantener la integridad de la base de socios y facilitar la toma de decisiones estratégicas.
 :::
-En su vista principal ofrece un panel donde se concentran:
 
-* Datos generales del socio.
+- ✅ **Alta de nuevos socios**  
+  Registro inicial con datos básicos y documentación respaldatoria.
 
-* Herramientas de gestión (alta, baja, actualización, bloqueo).
+- 🧩 **Definición de categoría o tipo de socio**  
+  Según criterios internos, normativos o institucionales.
 
-* Acceso a historial de operaciones y documentación.
+- ❌ **Baja de socios**  
+  Por renuncia, fallecimiento, expulsión o inactividad prolongada.
 
-## 4. Integración con otros procesos
-**El Módulo Socios interactúa con**:
+- 🔍 **Análisis de PLA/FT**  
+  Identificación, perfilado y validaciones automáticas según listas de control.
 
-* **Créditos**: Verificación de estado y condiciones antes de otorgar operaciones.
+- 🗃️ **Organización de la base de datos**  
+  Estructuración, normalización y mantenimiento actualizado de registros.
 
-* **Cobranzas**: Información sobre deudas y pagos.
+- 📊 **Consultas y reportes**  
+  Acceso a información individual o masiva para auditorías, decisiones o seguimiento.
 
-* **PLA/FT**: Generación automática de alertas según cambios de perfil o documentación.
+---
 
-* **Tesorería**: Asociación de cuentas bancarias para transferencias o débitos.
+## 🗂️ 2. Estructura de Datos
+
+**La información se organiza en dos grandes bloques:**
+
+### 📄 2.1 Datos Básicos
+
+| Campo                  | Descripción               |
+|------------------------|---------------------------|
+| Nombre y apellido      | Identificación personal   |
+| Documento (DNI/CUIT)   | Registro oficial          |
+| Dirección              | Ubicación física          |
+| Teléfonos y correo     | Canales de contacto       |
+
+### 🧩 2.2 Datos Específicos
+
+#### 👤 Personas Físicas
+
+- Actividad principal  
+- Situación laboral *(dependencia, monotributo, autónomo)*  
+- Ingresos y situación económica  
+- Datos laborales y referencias  
+
+#### 🏢 Personas Jurídicas
+
+- Razón social y CUIT  
+- Objeto social  
+- Composición societaria  
+- Autoridades y apoderados  
+- Información económica y patrimonial  
+
+---
+
+## 🔍 3. Funciones de Consulta
+
+:::tip Panel de gestión
+El módulo permite búsquedas dinámicas por múltiples criterios: nombre, documento, teléfono, categoría, estado, etc.
+:::
+
+En su vista principal se incluye:
+
+- 🧾 **Datos generales del socio**  
+- 🛠️ **Herramientas de gestión**: alta, baja, actualización, bloqueo  
+- 📁 **Historial de operaciones y documentación**  
+
+---
+
+## 🔗 4. Integración con Otros Procesos
+
+:::info Ecosistema VIMARX
+El módulo Socios no opera aislado: se vincula con procesos clave que amplifican su funcionalidad.
+:::
+
+| Módulo        | Interacción clave                                                                 |
+|---------------|------------------------------------------------------------------------------------|
+| 💳 **Créditos**     | Verificación de estado y condiciones antes de otorgar operaciones                 |
+| 💰 **Cobranzas**    | Información sobre deudas, pagos y estado financiero del socio                    |
+| 🚨 **PLA/FT**       | Generación automática de alertas ante cambios de perfil o documentación           |
+| 🏦 **Tesorería**     | Asociación de cuentas bancarias para transferencias, débitos y conciliaciones     |
+
+---
+
+## 🧭 Visión Institucional
+
+:::note
+Este módulo no solo gestiona datos: construye confianza, trazabilidad y visión estratégica. Su correcta implementación garantiza transparencia operativa y cumplimiento normativo.
+:::

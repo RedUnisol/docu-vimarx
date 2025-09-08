@@ -1,89 +1,98 @@
 ---
 sidebar_position: 1
-sidebar_label: Categorias de socios
+sidebar_label: Categorías de Socios
 ---
 
-import Tag from '@site/src/components/HomepageFeatures/Tag';
+# 👨‍👩‍👧‍👦 Categorías de Socios
 
-
-# Categoria de socios 👨‍👩‍👧‍👦
-
-:::tip[Categorías de socios]
-Las categorías de socios permiten clasificar a los asociados según criterios internos de la entidad y su vinculación con terceros.
-El sistema admite la carga de cantidad ilimitada de categorías, pudiendo configurarse tanto categorías internas como categorías externas, con parámetros operativos y normativos definidos.
+:::tip Rol del Módulo
+El módulo **Categorías de Socios** permite clasificar a los asociados según criterios internos, normativos y operativos. Su correcta configuración impacta directamente en la gestión institucional, la aplicación de cuotas sociales y la presentación normativa ante organismos como el INAES.
 :::
 
-## 1. Tipos de categorías
-### 1.1. Categorías internas
-* Utilizadas para socios que pertenecen directamente a la entidad.
+---
 
-* Pueden corresponder a las categorías tradicionales:
-  * Activo.
+## 🔧 1. Tipologías de Categoría
 
-  * Adherente.
-
-  * Participante.
-
-  * Otros definidos por la entidad.
-
-* Su configuración interna incluye:
-
-  * Edad mínima para ingreso.
-
-  * Asignación o no de número de socio.
-
-  * Habilitación para operar.
-
-  * Tipo de cuota social aplicable y monto (gestionado desde el submódulo de cuotas sociales).
-
-### 1.2. Categorías externas
-* Orientadas a socios que provienen de otra entidad en virtud de un convenio interinstitucional.
-
-* No son socios plenos de la mutual pero mantienen derechos o accesos según el convenio vigente.
-
-* Pueden estar asociadas a parámetros diferenciados de cuota social o acceso a servicios.
-
-
-## 2. Categorías especiales
-* No informar: Se utiliza para personas registradas en el sistema pero que no deben ser incluidas en el Artículo 9 del INAES.
-:::warning[Ejemplo]
- proveedores, contactos externos o registros internos sin condición de socio.
+:::info Clasificación institucional
+Las categorías definen el tipo de vínculo que cada persona mantiene con la entidad, habilitando o restringiendo derechos, obligaciones y accesos.
 :::
-* Externo mínimo: Para identificar personas externas con relación mínima a la entidad, sin derechos ni obligaciones de socio.
 
+### 🏛️ 1.1 Categorías Internas
 
+- Asociados que pertenecen directamente a la entidad.
+- Tipologías tradicionales:
+  - Activo
+  - Adherente
+  - Participante
+  - Otros definidos por la entidad
+- Parámetros configurables:
+  - Edad mínima de ingreso
+  - Asignación de número de socio
+  - Habilitación operativa
+  - Tipo y monto de cuota social *(vinculado al submódulo Cuotas Sociales)*
 
-## 3. Configuración de categorías
-Cada categoría tiene parámetros de configuración, entre ellos:
+### 🔗 1.2 Categorías Externas
 
-* Nombre o título interno.
+- Asociados provenientes de convenios interinstitucionales.
+- No son socios plenos, pero acceden a servicios según el convenio vigente.
+- Pueden tener cuotas sociales diferenciadas o acceso limitado.
 
-* Tipo (interna, externa, especial).
+---
 
-* Edad mínima.
+## ⚠️ 2. Categorías Especiales
 
-* Requerimiento o no de número de socio.
+:::warning Uso restringido
+Estas categorías no representan socios activos y se excluyen de reportes normativos como el Artículo 9 del INAES.
+:::
 
-* Habilitación operativa.
+- **No Informar**  
+  Personas registradas sin condición de socio (proveedores, contactos, registros internos).
 
-* Tipo de cuota social (fija, variable, exenta).
+- **Externo Mínimo**  
+  Personas con vínculo mínimo, sin derechos ni obligaciones asociativas.
 
-* Monto de cuota (gestionado en Submódulo de Cuotas Sociales).
+---
 
+## ⚙️ 3. Parámetros de Configuración
 
-## 4. Relación con el Artículo 9 del INAES
-* Las categorías determinan qué socios serán informados en la presentación del Artículo 9.
+Cada categoría puede definirse con los siguientes atributos:
 
-* Categorías como No informar y Externo mínimo quedan excluidas de la exportación.
+| Parámetro                  | Descripción                                                  |
+|----------------------------|--------------------------------------------------------------|
+| Nombre interno             | Identificador institucional                                 |
+| Tipo de categoría          | Interna / Externa / Especial                                |
+| Edad mínima                | Requisito para ingreso                                       |
+| Número de socio requerido  | Sí / No                                                      |
+| Habilitación operativa     | Permite o restringe el uso de módulos                       |
+| Tipo de cuota social       | Fija / Variable / Exenta *(vinculado a Cuotas Sociales)*     |
+| Monto de cuota             | Definido en el submódulo correspondiente                    |
 
-* Este criterio es clave para mantener la coherencia normativa y evitar errores en las presentaciones oficiales.
+---
 
+## 📄 4. Relación con el Artículo 9 del INAES
 
-## 5. Visualización y gestión
-En la vista del módulo, el sistema permite:
+:::info Presentación normativa
+La clasificación de socios impacta directamente en la presentación oficial ante el INAES.
+:::
 
-* Listar todos los socios filtrados por categoría.
+- Solo las categorías habilitadas se incluyen en el reporte del Artículo 9.
+- Las categorías **No Informar** y **Externo Mínimo** quedan excluidas automáticamente.
+- Este criterio garantiza coherencia normativa y evita errores en la exportación.
 
-* Visualizar la configuración y parámetros de cada categoría.
+---
 
-* Consultar cuotas sociales asociadas a cada tipo de socio.
+## 🧭 5. Visualización y Gestión
+
+En la vista principal del módulo, el sistema permite:
+
+- 📋 Listado de socios filtrado por categoría
+- 🔍 Consulta de parámetros configurados por tipo
+- 💳 Visualización de cuotas sociales asociadas a cada categoría
+
+---
+
+## 🧠 Visión Institucional
+
+:::note
+La correcta definición de categorías permite una gestión más precisa, una aplicación coherente de beneficios y una presentación normativa sin errores. Es un componente clave para la trazabilidad operativa y la planificación estratégica.
+:::

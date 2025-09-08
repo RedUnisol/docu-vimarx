@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'VIMARX',
-  tagline: 'Gestión fácil, rápida y segura',
+  tagline: 'Documentación oficial para dominar VIMARX',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future

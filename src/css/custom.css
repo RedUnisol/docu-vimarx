@@ -39,6 +39,7 @@
 }
 
 /* Cambiar el color del botón si quieres */
+
 .button.button--secondary {
   background-color: #1eae5a;
   color: white;
@@ -52,21 +53,132 @@
 }
 
 /*------------NAVBAR----------------  */
- .navbar {
+/* NAVBAR con degradado elegante */
+.navbar {
   background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
-  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  padding: 12px 24px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
+/* Logo */
+.navbar__brand {
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #ffffff;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.navbar__brand:hover {
+  color: #00ffcc;
+}
+
+/* Links */
 .navbar__link {
   color: #ffffff;
+  margin: 0 14px;
+  font-weight: 500;
+  font-size: 1rem;
+  position: relative;
+  padding: 6px 0;
+  transition: color 0.3s ease;
 }
 
+/* Hover con glow + subrayado animado */
+.navbar__link:hover {
+  color: #00ffcc;
+  text-shadow: 0 0 8px rgba(0, 255, 204, 0.6);
+}
+
+.navbar__link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: #00ffcc;
+  transition: width 0.3s ease;
+}
+
+.navbar__link:hover::after {
+  width: 80%;
+}
+
+/* ✅ Resaltar la ruta actual */
 .navbar__link--active {
-  color: #1eae5a; 
-} 
+  color: #00ffcc;
+  font-weight: 700;
+}
+
+.navbar__link--active::after {
+  width: 80%;
+}
+
+
+/*------------NAVBAR-2----------------  */
+
+/* NAVBAR con fondo sólido y degradado */
+/* .navbar {
+  background: linear-gradient(90deg, #0d0d0d, #1a1a1a);
+  border-bottom: 2px solid #00f5d4;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+} */
+
+/* Logo */
+/* .navbar__brand {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+} */
+
+/* Links */
+/* .navbar__link {
+  color: #ffffff;
+  font-weight: 500;
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  position: relative;
+} */
+
+/* Hover Glow */
+/* .navbar__link:hover {
+  color: #00f5d4;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 12px rgba(0, 245, 212, 0.6);
+} */
+
+/* Línea animada */
+/* .navbar__link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: #00f5d4;
+  transition: width 0.3s ease;
+} */
+/* 
+.navbar__link:hover::after {
+  width: 80%;
+} */
 
 
 /* ---------GRILLA CARDS----------- */
+
 .cards-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

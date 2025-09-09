@@ -38,7 +38,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: "Atención a Socios",
-    image: "/img/erp5.png",
+    image: "/img/erpSocio.png",
     description: <>Gestión rápida de solicitudes, reclamos y consultas.</>,
   },
 ];

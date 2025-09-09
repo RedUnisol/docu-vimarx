@@ -44,6 +44,9 @@
   min-height: 70vh;
   position: relative;
   background-image: linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.1)), url('/img/imagen_banner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .heroBanner::before {

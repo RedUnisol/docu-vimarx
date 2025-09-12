@@ -23,7 +23,7 @@ const config: Config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'celesol', // Usually your GitHub org/user name.
-  projectName: 'VIMAX DOCUMENTACION', // Usually your repo name.
+  projectName: 'VIMARX DOCUMENTACION', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',

@@ -5,7 +5,7 @@ sidebar_label: Socios mutual
 
 # 👪 Socios
 
-:::tip Rol del Sistema
+:::tip Rol
 El módulo **Socios** es el corazón operativo de **VIMARX**.  
 Desde aquí se estructura, administra y vincula toda la información de los asociados, funcionando como base troncal que conecta **datos personales, comerciales, documentales y operativos**.
 

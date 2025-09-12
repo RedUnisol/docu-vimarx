@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-sidebar_label: Cuotas Sociales
+sidebar_label: Cuotas sociales
 ---
 
 # 💳 Cuotas Sociales

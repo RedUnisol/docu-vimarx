@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-sidebar_label: Cuenta Socio
+sidebar_label: Cuenta socio
 ---
 
 # 💳 Cuenta Socio

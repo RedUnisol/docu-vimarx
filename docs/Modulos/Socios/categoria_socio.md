@@ -1,12 +1,14 @@
 ---
 sidebar_position: 1
-sidebar_label: Categorías de Socios
+sidebar_label: Categorías de socios
 ---
 
 # 🏷️ Categorías de Socios
 
+:::tip rol
 El submódulo **Categorías de Socios** administra las diferentes categorías societarias de la mutual, los **motivos de alta o baja** y el **historial de cambios** para cada socio.  
 Es un componente clave para **clasificar asociados**, definir su operatoria y garantizar la **trazabilidad de los estados**.
+:::
 
 ---
 

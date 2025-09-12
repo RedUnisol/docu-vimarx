@@ -2,9 +2,11 @@ import Tag from '@site/src/components/HomepageFeatures/UI/Tag';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
---- 
+---
+
 title: Roles
 description: Roles de usuario en el sistema
+
 ---
 
 <Tabs>
@@ -22,6 +24,7 @@ Los permisos son configuraciones específicas que determinan qué acciones puede
 </Tabs>
 
 ### Roles de usuario
+
 Los <Tag color="#FF5733">roles</Tag> son <Tag color="#3a4aa8ff">conjuntos</Tag> de permisos que se asignan a los usuarios para definir sus capacidades dentro del
 
 :::note[una nota]
@@ -43,28 +46,21 @@ Los roles y permisos mal configurados pueden llevar a brechas de seguridad o acc
 :::
 
 ```jsx title="Ejemplo de código"
-import React from 'react';
-import { Button } from '@site/src/components/Button';
+import React from "react";
+import { Button } from "@site/src/components/Button";
 const Example = () => {
-  return (
-    <Button onClick={() => alert('¡Hola, mundo!')}>
-      Click me
-    </Button>
-  );
+  return <Button onClick={() => alert("¡Hola, mundo!")}>Click me</Button>;
 };
 export default Example;
 ```
+
 ```jsx title="Ejemplo de código"
-import React from 'react';
-import { Button } from '@site/src/components/Button';
+import React from "react";
+import { Button } from "@site/src/components/Button";
 const Example = () => {
-    // highlight-next-line
-  console.log('Este es un ejemplo de código en React');
-  return (
-    <Button onClick={() => alert('¡Hola, mundo!')}>
-      Click me
-    </Button>
-  );
+  // highlight-next-line
+  console.log("Este es un ejemplo de código en React");
+  return <Button onClick={() => alert("¡Hola, mundo!")}>Click me</Button>;
 };
 export default Example;
 ```

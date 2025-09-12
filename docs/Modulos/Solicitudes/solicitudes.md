@@ -1,134 +1,113 @@
 ---
-sidebar_position: 1
+sidebar_position: 0
 sidebar_label: Solicitudes
 ---
 
-# 📱 Solicitudes
+# 📝 Solicitudes
 
-:::tip **Rol de Solicitudes**
-El módulo de **Solicitudes** en VIMARX es el **núcleo operativo** para la gestión integral de pedidos de operaciones crediticias y otros productos financieros.
+:::tip Rol institucional  
+El submódulo **Solicitudes** centraliza la gestión de los pedidos de préstamos de los socios, abarcando todas las etapas del ciclo:  
+**Carga inicial → Preevaluación → Aprobación → Rechazo → Liquidación**.  
 
-Su función abarca desde la **carga inicial** de una solicitud por parte de un **vendedor, ejecutivo o agente**, hasta su análisis, resolución y derivación a otros módulos del sistema.
-
-Este módulo no solo **centraliza la información**, sino que permite:
-- Coordinar la interacción entre distintas áreas.
-- Controlar plazos.
-- Verificar requisitos.
-- Asegurar el cumplimiento de políticas internas y normativas vigentes.
-
-Se estructura en:
-- Una **vista principal** para monitoreo en tiempo real.
-- Submódulos auxiliares que permiten **configurar estados, roles, límites operativos**, y gestionar datos y documentación complementaria.
-
-Todo esto otorga **trazabilidad completa** a cada solicitud.
+También administra a **agentes, ejecutivos y vendedores** involucrados en el flujo de originación, asegurando trazabilidad y control sobre cada operación.
 :::
 
 ---
 
-## 🖥️ 1. Vista principal de Solicitudes
+## 📊 1. Listado de Solicitudes – Evaluación Inicial
 
-La vista principal presenta un **listado de solicitudes** con herramientas de **filtrado y búsqueda avanzada**:
+:::info  
+La pantalla principal muestra un **listado tabular** con todas las solicitudes registradas en el sistema, incluyendo datos clave para una rápida evaluación.
+:::
 
-- 🔎 **Filtros por**:
-  - Fecha de creación
-  - Última modificación
-  - Estado
-  - Ejecutivo asignado
-  - Vendedor / agente
-  - Monto solicitado
+### 🧮 1.1 Columnas principales
 
-- 📆 **Segmentación temporal**:
-  - Solicitudes del día
-  - Semana determinada
-  - Estados: aprobada, pendiente, rechazada, en revisión
+| 🗓️ Fecha | 🔢 Nro Solicitud | 👤 Socio | 📌 Estado | 💵 Monto | 📄 TYC Aceptado | 🧾 Préstamo | 🏷️ Línea |
+|---------|------------------|----------|-----------|-----------|----------------|-------------|------------|
+| Día de ingreso | Identificador único | Nro y nombre | Preaprobado, Liquidada, etc. | Importe solicitado | Fecha de aceptación | Nro generado | Producto crediticio |
 
-### ✅ Acciones principales
-
-| Acción                         | Descripción                                                                 |
-|--------------------------------|------------------------------------------------------------------------------|
-| 👁️ Visualizar solicitud           | Acceso al detalle completo                                                  |
-| ✏️ Editar información             | Disponible mientras el estado lo permita                                   |
-| 🔄 Cambiar estado                 | Manual si el flujo lo autoriza                                              |
-| 📤 Exportar listado               | Para análisis externo                                                       |
-
-### 🔍 Detalle de solicitud
-
-Incluye información clave del socio y de la operación:
-
-- 👤 **Datos del socio**: nombre, documento, categoría, contacto  
-- 💼 **Datos de la operación**: monto solicitado, saldo previo, ratio de renovación, forma de cobro, actividad laboral
-
-Accesos adicionales:
-- 🖩 Simulador de préstamo  
-- 📂 Consulta y carga de adjuntos  
-- 🕒 Historial de novedades  
-- 📝 Observaciones internas  
-- 🔗 Link de seguimiento
+:::note  
+Con los **filtros avanzados** (por estado, socio, línea o fecha) es posible localizar solicitudes específicas en segundos.  
+Un **doble clic** sobre cualquier fila abre la ficha detallada del caso.
+:::
 
 ---
 
-## 🧩 2. Submódulos y funciones auxiliares
+## 🔍 2. Ficha de Solicitud – Vista Detallada
 
-### ⚙️ 2.1 Auxiliares de Solicitud
+:::info  
+La ficha concentra toda la información de un pedido y se organiza en secciones claras:
+:::
 
-| Submódulo                    | Función principal                                                           |
-|-----------------------------|------------------------------------------------------------------------------|
-| 💳 **Líneas del préstamo**         | Consulta de condiciones sin generar liquidación                             |
-| ➕ **Adicionales de solicitud**    | Registro de beneficiarios, garantes, cotitulares                            |
-| 📎 **Adjuntos de solicitud**       | Repositorio documental                                                      |
-| 🔖 **Estados de solicitud**        | Definición de etapas y reglas de transición                                 |
-| 🏷️ **Grupos de solicitud**         | Clasificación por tipo o segmento                                           |
-| 🕒 **Novedades de solicitud**      | Registro histórico de cambios y eventos                                     |
-| 🎯 **Segmentaciones de líneas**    | Condiciones especiales por campañas o comisiones                            |
-| 🚗 **Evaluación de vehículos**     | Listado y valuación de garantías prendarias                                 |
-| 📑 **Tipos de adjuntos**           | Categorización de documentos requeridos y opcionales                        |
+### 📋 2.1 Datos de la Solicitud
 
----
+- 🆔 Identificadores únicos  
+- 🔄 Estado editable  
+- 🗒️ Última novedad registrada  
+- 🧠 Observaciones internas  
+- 📊 Análisis crediticio (saldo, ratio de renovación, etc.)
 
-### 🧑‍🤝‍🧑 2.2 Agentes
+### 👤 2.2 Datos del Socio
 
-Todo **vendedor pertenece a un agente**, quien administra:
-- 📦 **Líneas de productos disponibles**  
-- 🏢 **Comercializadores vinculados**  
-- 👥 **Analistas habilitados**  
-- 🧑‍💼 **Responsable del agente con permisos de supervisión**  
-- 🔗 **Asignación de ejecutivos predeterminados**
+- 🪪 Identidad y categoría societaria  
+- 🎁 Beneficios asociados  
+- 📞 Contacto  
+- 🏦 Cuentas bancarias
 
----
+### 🗂️ 2.3 Pestañas Funcionales
 
-### 🧑‍💻 2.3 Ejecutivos
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-Roles internos con funciones específicas dentro del flujo de solicitudes:
--  Agrupados en **grupos de ejecutivos** (analistas de crédito, auxiliares, tesorería, etc.)  
--  Permisos determinados por el grupo asignado  
--  Posibilidad de vincular ejecutivos a **socios o etapas del proceso**
-
----
-
-### 🛍️ 2.4 Vendedores
-
-- Asociados a un **usuario y a un agente**  
-- Configuración de **límites operativos**:
-  - 💵 Monto máximo por operación  
-  - 📉 Tope de comisiones  
-- 📊 Reportes y análisis por vendedor para seguimiento comercial
+<Tabs>
+  <TabItem value="simulador" label="🧮 Simulador Préstamo">
+    Recalcula cuotas y condiciones según línea seleccionada.
+  </TabItem>
+  <TabItem value="adjuntos" label="📎 Adjuntos">
+    Carga de documentación respaldatoria (DNI, recibos, etc.).
+  </TabItem>
+  <TabItem value="novedades" label="🕓 Novedades">
+    Historial de cambios y observaciones internas.
+  </TabItem>
+  <TabItem value="prestamos" label="📚 Préstamos">
+    Detalle de préstamos activos e históricos del socio.
+  </TabItem>
+</Tabs>
 
 ---
 
-## 📋 3. Procedimiento básico de análisis y tratamiento
+## 🏢 3. Gestión de Actores – Roles Jerárquicos
 
-1. 📝 **Ingreso de solicitud** con datos completos del socio y documentación requerida  
-2. 🔍 **Revisión inicial** para validar integridad de datos y legibilidad de documentos  
-3. 📊 **Evaluación** por el rol asignado, considerando scoring, capacidad de pago y políticas  
-4. 🔄 **Cambio de estado** según resolución: aprobación, rechazo, observación o espera  
-5. 🗂️ **Registro de novedades** y archivo de adjuntos para respaldo y auditoría  
-6. 🔗 **Derivación al módulo de Operaciones** si se aprueba, manteniendo la trazabilidad
+:::info  
+Este módulo no solo administra las ***solicitudes***, sino también a los actores que intervienen en ellas.
+:::
+
+### 🧑‍💼 3.1 Estructura de Roles
+
+| Rol | Función | Parámetros |
+|-----|---------|------------|
+| 🏦 **Agente** | Origina solicitudes | Nombre, usuario, ejecutivo predeterminado, límites |
+| 👨‍💼 **Ejecutivo** | Evalúa y aprueba | Límites de aprobación, relación con agentes |
+| 🛍️ **Vendedor** | Comercializa productos | Montos máximos, comisiones, usuarios vinculados |
+
 
 ---
 
-## ⚠️ 4. Observaciones operativas
+## 🔄 4. Flujo Operativo – Caso Real
 
-- ⚙️ **La integración con flujos configurables** permite automatizar pasos y reducir errores humanos  
-- 📁 **El uso correcto de novedades y adjuntos** garantiza un control documental sólido  
-- 🔐 **La definición clara de roles y permisos** evita demoras y asegura trazabilidad  
-- 🧩 **Los submódulos permiten adaptar el módulo** a distintas realidades sin perder estandarización
+1. 🧍‍♂️ El socio solicita un préstamo  
+2. 🖥️ El operador carga datos: socio, línea, monto  
+3. 🔍 Pasa a **preevaluación** → validación documental y análisis crediticio  
+4. ✅ Si cumple requisitos → aprobación por ejecutivo  
+5. 💸 **Liquidación** → desembolso en cuenta bancaria  
+6. 📁 Cierre y seguimiento en pestañas como **Novedades** y **Préstamos**
+
+---
+
+:::note ✅ Beneficios Institucionales
+ 
+- 🔍 **Trazabilidad completa** → seguimiento desde el origen hasta el cierre  
+- ⚙️ **Automatización** → simulador + generación automática de cuentas  
+- 🧭 **Control jerárquico** → distribución clara entre agentes, ejecutivos y vendedores  
+- 🧾 **Transparencia** → bitácora de estados y novedades para auditoría interna
+:::

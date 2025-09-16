@@ -1,11 +1,11 @@
 ---
-sidebar_position: 0
+sidebar_position: 1
 sidebar_label: Solicitudes
 ---
 
 # 📝 Solicitudes
 
-:::tip Rol institucional  
+:::tip Rol
 El submódulo **Solicitudes** centraliza la gestión de los pedidos de préstamos de los socios, abarcando todas las etapas del ciclo:  
 **Carga inicial → Preevaluación → Aprobación → Rechazo → Liquidación**.  
 

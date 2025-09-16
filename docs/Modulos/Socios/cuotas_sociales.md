@@ -34,7 +34,7 @@ Listado tabular de todos los resúmenes generados, organizados por período y so
 | **Nro Lote** | Número de lote si fue generado masivamente |
 | **Socio Mutual** | Código interno para integraciones |
 
-### 🔎 1.2Funcionalidad
+### 🔎 1.2 Funcionalidad
 
 - 🔍 Filtrado por período, socio o monto.  
 - ✨ **Doble clic** sobre un resumen → abre el detalle completo.  

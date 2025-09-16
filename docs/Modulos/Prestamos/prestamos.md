@@ -6,9 +6,9 @@ sidebar_label: Préstamos
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# 💳 Módulo de Préstamos – ERP Mutual
+# 💳 Préstamos
 
-:::info
+:::tip rol
 Este módulo permite administrar de forma integral la operatoria crediticia de la mutual, desde la generación de nuevas operaciones hasta su cancelación.  
 Centraliza información de préstamos, cuotas, cobros y débitos automáticos, asegurando trazabilidad, control contable y seguimiento de cartera.
 :::

@@ -1,12 +1,12 @@
 ---
 sidebar_position: 2
-sidebar_label: Categoría de Socios2
+sidebar_label: Categoría de Socios
 ---
 
 # 🏷️ Categoría de Socios
 
 :::tip Rol
-El módulo **Categoría de Socios** permite organizar, clasificar y administrar los perfiles de los asociados dentro del sistema **VIMARX**, facilitando la segmentación operativa, la asignación de permisos y la ejecución de tareas automatizadas.
+El submódulo **Categoría de Socios** permite organizar, clasificar y administrar los perfiles de los asociados dentro del sistema **VIMARX**, facilitando la segmentación operativa, la asignación de permisos y la ejecución de tareas automatizadas.
 :::
 
 ---

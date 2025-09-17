@@ -1,6 +1,6 @@
 ---
 sidebar_position: 0
-sidebar_label: Socios mutual2
+sidebar_label: Socios mutual
 ---
 
 # 👪 Socios
@@ -85,3 +85,5 @@ import TabItem from '@theme/TabItem';
 
 </TabItem>
 </Tabs>
+
+![Barra de tareas](/img/modulos/socio/sociosMutual_barraHerramientas.png)

@@ -10,6 +10,8 @@ El módulo AMT del ERP de Mutual Celesol permite la administración integral de 
 Desde este módulo se pueden **emitir certificados**, gestionar **renovaciones**, **anticipos**, **cancelaciones**, consultar **saldos e intereses**, así como obtener **reportes** de cartera y movimientos históricos.
 :::
 
+---
+
 ## 📑 1. Vista Principal
 ### Lista todos los certificados vigentes:
 

@@ -3,6 +3,9 @@ sidebar_position: 0
 sidebar_label: Socios mutual
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # 👪 Socios
 
 :::tip Rol
@@ -14,8 +17,8 @@ Desde aquí se estructura, administra y vincula toda la información de los asoc
 
 ## 🖥️ 1. Vista Principal del módulo Socios
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+![Barra de tareas vista socios](/img/modulos/socio/vistaSociosBarra.png)
+![Vista de socios](/img/modulos/socio/vistaSocios.png)
 
 <Tabs>
 <TabItem value="Principales" label="⚙️ Funciones Principales">
@@ -54,6 +57,11 @@ import TabItem from '@theme/TabItem';
 
 ## 📋 2. Ficha de un Socio
 
+![Barra de tareas vista socio](/img/modulos/socio/socioBarra.png)
+![Vista de socio](/img/modulos/socio/socio.png)
+![Vista de socio 2](/img/modulos/socio/socio2.png)
+
+
 <Tabs>
 <TabItem value="Principales" label="⚙️ Funciones Principales">
 
@@ -85,5 +93,3 @@ import TabItem from '@theme/TabItem';
 
 </TabItem>
 </Tabs>
-
-![Barra de tareas](/img/modulos/socio/sociosMutual_barraHerramientas.png)

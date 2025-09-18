@@ -3,6 +3,9 @@ sidebar_position: 2
 sidebar_label: Categoría de Socios
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # 🏷️ Categoría de Socios
 
 :::tip Rol
@@ -13,8 +16,9 @@ El submódulo **Categoría de Socios** permite organizar, clasificar y administr
 
 ## 🖥️ 1. Vista General de Categorías
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+![Barra de tareas de categorias de socios](/img/modulos/socio/catSociosBarra.png)
+![Vista de categorias de socios](/img/modulos/socio/catSociosVista.png)
+
 
 <Tabs>
 <TabItem value="Principales" label="⚙️ Funciones Principales">
@@ -44,6 +48,10 @@ import TabItem from '@theme/TabItem';
 ---
 
 ## 📂 2. Vista Individual de una Categoría
+
+![Barra de tareas de categoria de un socio](/img/modulos/socio/catSocioBarra.png)
+![Vista de categoria de un socio](/img/modulos/socio/catSocioVista.png)
+
 
 <Tabs>
 <TabItem value="Principales" label="⚙️ Funciones Principales">

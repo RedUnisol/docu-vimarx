@@ -17,8 +17,8 @@ Desde aquí se estructura, administra y vincula toda la información de los asoc
 
 ## 🖥️ 1. Vista Principal del módulo Socios
 
-![Barra de tareas vista socios](/img/modulos/socio/vistaSociosBarra.png)
-![Vista de socios](/img/modulos/socio/vistaSocios.png)
+![Barra de tareas vista socios](/img/modulos/socio/sociosBarra.png)
+![Vista de socios](/img/modulos/socio/sociosVista.png)
 
 <Tabs>
 <TabItem value="Principales" label="⚙️ Funciones Principales">
@@ -57,10 +57,7 @@ Desde aquí se estructura, administra y vincula toda la información de los asoc
 
 ## 📋 2. Ficha de un Socio
 
-![Barra de tareas vista socio](/img/modulos/socio/socioBarra.png)
-![Vista de socio](/img/modulos/socio/socio.png)
-![Vista de socio 2](/img/modulos/socio/socio2.png)
-
+![Barra de tareas de ficha de un socio](/img/modulos/socio/socioBarra.png)
 
 <Tabs>
 <TabItem value="Principales" label="⚙️ Funciones Principales">

@@ -12,6 +12,8 @@ import TabItem from '@theme/TabItem';
 
 ## 🧭 Vista general cuentas AMV
 
+![Barra de tareas de cuentas](/img/modulos/cuentas/cuentasAmvBarra.png)
+
 <Tabs>
   <TabItem value="principales" label="⚙️ Funciones principales" default>
 
@@ -44,6 +46,8 @@ import TabItem from '@theme/TabItem';
 </Tabs>
 
 ## 🧾 Vista individual de una cuenta AMV
+
+![Barra de tareas de una cuenta AMV](/img/modulos/cuentas/cuentaAmvBarra.png)
 
 <Tabs>
   <TabItem value="principales" label="⚙️ Funciones principales" default>

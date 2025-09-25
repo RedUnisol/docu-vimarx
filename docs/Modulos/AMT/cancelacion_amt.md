@@ -12,6 +12,8 @@ import TabItem from '@theme/TabItem';
 
 ## 🧭 Vista general
 
+![Barra de tareas de cancelaciones ](/img/modulos/amt/amtCancelacionesBarra.png)
+
 <Tabs>
   <TabItem value="principales" label="⚙️ Funciones principales" default>
 
@@ -32,6 +34,8 @@ import TabItem from '@theme/TabItem';
 </Tabs>
 
 ## 🧾 Vista individual
+
+![Barra de tareas de una cancelacion](/img/modulos/amt/amtCancelacionBarra.png)
 
 <Tabs>
   <TabItem value="principales" label="⚙️ Funciones principales" default>

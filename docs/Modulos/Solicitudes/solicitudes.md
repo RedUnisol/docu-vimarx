@@ -17,6 +17,8 @@ Es una herramienta clave para el área operativa y crediticia de **VIMARX**.
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
+![Barra de tareas de solicitudes](/img/modulos/solicitudes/solicitudesBarra.png)
+
 <Tabs>
 <TabItem value="Principales" label="⚙️ Funciones Principales">
 
@@ -60,6 +62,8 @@ import TabItem from '@theme/TabItem';
 </Tabs>
 
 ## 📑 2. Vista Individual de Solicitud
+
+![Barra de tareas de una solicitud](/img/modulos/solicitudes/solicitudBarra.png)
 
 <Tabs>
 <TabItem value="Principales" label="⚙️ Funciones Principales">

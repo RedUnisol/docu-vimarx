@@ -12,6 +12,8 @@ import TabItem from '@theme/TabItem';
 
 ## 🧭 Vista general de débitos
 
+![Barra de tareas de debitos](/img/modulos/cuentas/debitosBarra.png)
+
 <Tabs>
   <TabItem value="principales" label="⚙️ Funciones principales" default>
 

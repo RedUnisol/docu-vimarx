@@ -12,6 +12,8 @@ import TabItem from '@theme/TabItem';
 
 ## 🧭 Vista general de transferencias
 
+![Barra de tareas de transferencias](/img/modulos/cuentas/transferenciasBarra.png)
+
 <Tabs>
   <TabItem value="principales" label="⚙️ Funciones principales" default>
 

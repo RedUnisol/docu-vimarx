@@ -16,8 +16,7 @@ El submódulo **Categoría de Socios** permite organizar, clasificar y administr
 
 ## 🖥️ 1. Vista General de Categorías
 
-![Barra de tareas de categorias de socios](/img/modulos/socio/catSociosBarra.png)
-![Vista de categorias de socios](/img/modulos/socio/catSociosVista.png)
+![Barra de tareas categorias de socios](/img/modulos/socio/catSociosBarra.png)
 
 
 <Tabs>
@@ -49,8 +48,7 @@ El submódulo **Categoría de Socios** permite organizar, clasificar y administr
 
 ## 📂 2. Vista Individual de una Categoría
 
-![Barra de tareas de categoria de un socio](/img/modulos/socio/catSocioBarra.png)
-![Vista de categoria de un socio](/img/modulos/socio/catSocioVista.png)
+![Barra de tareas de categoria socio](/img/modulos/socio/catSocioBarra.png)
 
 
 <Tabs>

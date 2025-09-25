@@ -17,6 +17,8 @@ Es una herramienta clave para el área financiera y administrativa de **VIMARX**
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
+![Barra de tareas de prestamos](/img/modulos/prestamos/prestamosBarra.png)
+
 <Tabs>
 <TabItem value="Principales" label="⚙️ Funciones Principales">
 
@@ -72,6 +74,8 @@ import TabItem from '@theme/TabItem';
 ---
 
 ### 📑 Vista Individual de Préstamo
+
+![Barra de tareas de un presamos](/img/modulos/prestamos/prestamoBarra.png)
 
 <Tabs>
 <TabItem value="Principales" label="⚙️ Funciones Principales">

@@ -12,6 +12,8 @@ import TabItem from '@theme/TabItem';
 
 ## 🧭 Vista general
 
+![Barra de tareas de movimientos](/img/modulos/amt/amtMovimientosBarra.png)
+
 <Tabs>
   <TabItem value="principales" label="⚙️ Funciones principales" default>
 
@@ -33,6 +35,8 @@ import TabItem from '@theme/TabItem';
 </Tabs>
 
 ## 🧾 Vista individual
+
+![Barra de tareas de un movimiento](/img/modulos/amt/amtMovimientoBarra.png)
 
 <Tabs>
   <TabItem value="principales" label="⚙️ Funciones principales" default>

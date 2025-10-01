@@ -7,11 +7,11 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'VIMARX',
   tagline: 'Documentación oficial para dominar VIMARX',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/logo_favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
-    v4: true, // Improve compatibility with the upcoming Docusaurus v4
+    v4: false, // Improve compatibility with the upcoming Docusaurus v4
   },
 
   // Set the production url of your site here
@@ -22,7 +22,7 @@ const config: Config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'celesol', // Usually your GitHub org/user name.
+  organizationName: 'VIMARX', // Usually your GitHub org/user name.
   projectName: 'VIMARX DOCUMENTACION', // Usually your repo name.
 
   onBrokenLinks: 'throw',
@@ -32,8 +32,8 @@ const config: Config = {
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'es',
+    locales: ['es'],
   },
 
   presets: [
@@ -76,7 +76,7 @@ const config: Config = {
       title: 'VIMARX',
       logo: {
         alt: 'VIMARX Logo',
-        src: 'img/logo.svg',
+        src: 'img/logo_vimarx_transparente.png',
       },
       items: [
         {
@@ -88,7 +88,7 @@ const config: Config = {
         {to: '/blog', label: 'blog', position: 'left'},
         {to: '/faq', label: 'Faq', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/nsallitto/docu-vimarx',
           label: 'GitHub',
           position: 'right',
         },
@@ -102,7 +102,7 @@ const config: Config = {
           items: [
             {
               label: 'Tutorial',
-              to: '/docs/intro',
+              to: '/docs/category/modulos',
             },
           ],
         },
@@ -132,12 +132,12 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/nsallitto/docu-vimarx',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} VIMARX, Inc. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,

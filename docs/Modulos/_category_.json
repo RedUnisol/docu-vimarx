@@ -3,6 +3,6 @@
   "position": 0,
   "link": {
     "type": "generated-index",
-    "description": "Documentación de los módulos principales del ERP, su estructura y funciones operativas."
+    "description": "Explora la estructura funcional del ERP VIMARX a través de sus módulos principales. Cada sección documenta procesos operativos, flujos de datos y puntos de integración, facilitando auditoría, onboarding y mantenimiento colaborativo."
   }
 }

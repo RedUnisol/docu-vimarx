@@ -18,6 +18,7 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 ![Barra de tareas de solicitudes](/img/modulos/solicitudes/solicitudesBarra.png)
+![Vista de solicitudes](/img/modulos/solicitudes/solicitudesVista_blur.png)
 
 <Tabs>
 <TabItem value="Principales" label="⚙️ Funciones Principales">
@@ -64,6 +65,8 @@ import TabItem from '@theme/TabItem';
 ## 📑 2. Vista Individual de Solicitud
 
 ![Barra de tareas de una solicitud](/img/modulos/solicitudes/solicitudBarra.png)
+![Vista de solicitud](/img/modulos/solicitudes/solicitudVista_blur.png)
+
 
 <Tabs>
 <TabItem value="Principales" label="⚙️ Funciones Principales">

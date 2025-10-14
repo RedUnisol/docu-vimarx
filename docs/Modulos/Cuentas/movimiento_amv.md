@@ -18,6 +18,7 @@ Constituye una herramienta clave para la gestión financiera de la mutual, ya qu
 ## 📑 Vista General de Movimiento AMV
 
 ![Barra de tareas de movimientos](/img/modulos/cuentas/movimientosAmvBarra.png)
+![Vista de cuentas](/img/modulos/cuentas/movimientosAmvVista_blur.png)
 
 <Tabs>
   <TabItem value="principales" label="⚙️ Funciones principales" default>
@@ -46,6 +47,7 @@ Constituye una herramienta clave para la gestión financiera de la mutual, ya qu
 ## 📑 Vista de Movimiento AMV Multiple
 
 ![Barra de tareas de un movimiento](/img/modulos/cuentas/movimientoAmvBarra.png)
+![Vista de cuenta](/img/modulos/cuentas/movimientoAmvVista_blur.png)
 
 <Tabs>
   <TabItem value="principales" label="⚙️ Funciones principales" default>

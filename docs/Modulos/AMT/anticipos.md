@@ -13,6 +13,7 @@ import TabItem from '@theme/TabItem';
 ## 🧭 Vista general
 
 ![Barra de tareas de anticipos](/img/modulos/amt/amtAnticiposBarra.png)
+![Vista de anticipos](/img/modulos/amt/amtAnticiposVista_blur.png)
 
 <Tabs>
   <TabItem value="principales" label="⚙️ Funciones principales" default>
@@ -35,6 +36,8 @@ import TabItem from '@theme/TabItem';
 ## 🧾 Vista individual
 
 ![Barra de tareas de un anticipo](/img/modulos/amt/amtAnticipoBarra.png)
+![Vista de cancelacion](/img/modulos/amt/amtCancelacionVista_blur.png)
+
 
 <Tabs>
   <TabItem value="principales" label="⚙️ Funciones principales" default>

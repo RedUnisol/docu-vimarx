@@ -6,26 +6,40 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
+  /* --ifm-color-primary: #2e8555;
   --ifm-color-primary-dark: #29784c;
   --ifm-color-primary-darker: #277148;
   --ifm-color-primary-darkest: #205d3b;
   --ifm-color-primary-light: #33925d;
   --ifm-color-primary-lighter: #359962;
   --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
+  --ifm-code-font-size: 95%; */
+  --ifm-color-primary: #c1272d;
+  --ifm-color-primary-dark: #a11f24;
+  --ifm-color-primary-darker: #8c1a1f;
+  --ifm-color-primary-darkest: #6e1418;
+  --ifm-color-primary-light: #d43c42;
+  --ifm-color-primary-lighter: #e05258;
+  --ifm-color-primary-lightest: #f26a70;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
+  /* --ifm-color-primary: #25c2a0;
   --ifm-color-primary-dark: #21af90;
   --ifm-color-primary-darker: #1fa588;
   --ifm-color-primary-darkest: #1a8870;
   --ifm-color-primary-light: #29d5b0;
   --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+  --ifm-color-primary-lightest: #4fddbf; */
+  --ifm-color-primary: #f26a70;
+  --ifm-color-primary-dark: #e05258;
+  --ifm-color-primary-darker: #d43c42;
+  --ifm-color-primary-darkest: #c1272d;
+  --ifm-color-primary-light: #ff7f85;
+  --ifm-color-primary-lighter: #ff999e;
+  --ifm-color-primary-lightest: #ffb3b7;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 /* estilos de docusaurus.config */
@@ -39,9 +53,10 @@
 }
 
 /* Cambiar el color del botón si quieres */
+  /* background-color: #1eae5a; */
 
 .button.button--secondary {
-  background-color: #1eae5a;
+  background-color: #d14343;
   color: white;
   font-size: 18px;
   padding: 6px 24px;
@@ -49,13 +64,14 @@
   transition: 0.3s;
 }
 .button.button--secondary:hover {
-  background-color: #009624;
+  background-color: #ad2b2b;
 }
 
 /*------------NAVBAR----------------  */
 /* NAVBAR con degradado elegante */
 .navbar {
-  background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+  /* background: linear-gradient(90deg, #0f2027, #203a43, #2c5364); */
+  background: linear-gradient(90deg, #1a1a2e, #16213e, #0f3460);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
   padding: 12px 24px;
   position: sticky;
@@ -73,7 +89,7 @@
 }
 
 .navbar__brand:hover {
-  color: #00ffcc;
+  color: #ff6666;
 }
 
 /* Links */
@@ -89,8 +105,11 @@
 
 /* Hover con glow + subrayado animado */
 .navbar__link:hover {
-  color: #00ffcc;
-  text-shadow: 0 0 8px rgba(0, 255, 204, 0.6);
+  color: #ff8080;
+  text-shadow: 
+    0 0 4px rgba(255, 128, 128, 0.7),
+    0 0 8px rgba(255, 128, 128, 0.5),
+    0 0 16px rgba(255, 128, 128, 0.3);
 }
 
 .navbar__link::after {
@@ -101,7 +120,7 @@
   transform: translateX(-50%);
   width: 0;
   height: 2px;
-  background-color: #00ffcc;
+  background-color: #ff6666;
   transition: width 0.3s ease;
 }
 
@@ -111,71 +130,17 @@
 
 /* ✅ Resaltar la ruta actual */
 .navbar__link--active {
-  color: #00ffcc;
+  color: #ff6666;
+  text-shadow: 
+    0 0 4px rgba(255, 102, 102, 0.8),
+    0 0 8px rgba(255, 102, 102, 0.6),
+    0 0 16px rgba(255, 102, 102, 0.4);
   font-weight: 700;
 }
 
 .navbar__link--active::after {
   width: 80%;
 }
-
-
-/*------------NAVBAR-2----------------  */
-
-/* NAVBAR con fondo sólido y degradado */
-/* .navbar {
-  background: linear-gradient(90deg, #0d0d0d, #1a1a1a);
-  border-bottom: 2px solid #00f5d4;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  transition: background 0.3s ease, box-shadow 0.3s ease;
-  position: sticky;
-  top: 0;
-  z-index: 999;
-} */
-
-/* Logo */
-/* .navbar__brand {
-  color: #ffffff;
-  font-weight: 700;
-  font-size: 1.6rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-} */
-
-/* Links */
-/* .navbar__link {
-  color: #ffffff;
-  font-weight: 500;
-  padding: 8px 14px;
-  border-radius: 8px;
-  transition: all 0.3s ease;
-  position: relative;
-} */
-
-/* Hover Glow */
-/* .navbar__link:hover {
-  color: #00f5d4;
-  background: rgba(255, 255, 255, 0.05);
-  box-shadow: 0 0 12px rgba(0, 245, 212, 0.6);
-} */
-
-/* Línea animada */
-/* .navbar__link::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 0;
-  height: 2px;
-  background: #00f5d4;
-  transition: width 0.3s ease;
-} */
-/* 
-.navbar__link:hover::after {
-  width: 80%;
-} */
-
 
 /* ---------GRILLA CARDS----------- */
 

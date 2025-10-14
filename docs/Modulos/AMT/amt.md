@@ -13,6 +13,7 @@ import TabItem from '@theme/TabItem';
 ## 🧭 Vista general módulo AMT
 
 ![Barra de tareas de amt](/img/modulos/amt/amtBarra.png)
+![Vista de amt](/img/modulos/amt/amtVista_blur.png)
 
 <Tabs>
   <TabItem value="principales" label="⚙️ Funciones principales" default>
@@ -44,9 +45,11 @@ import TabItem from '@theme/TabItem';
 
 ---
 
-### ⏳ AMT Vencido e Impagos (vista general)
+### ⏳ AMT Vencidos e Impagos (vista general)
 
 ![Barra de tareas de amt vencidos/impagos](/img/modulos/amt/amtVencidosImpagosBarra.png)
+![Vista de amt vencidos/impagos](/img/modulos/amt/amtVencidosImpagoVista_blur.png)
+
 
 <Tabs>
   <TabItem value="principales" label="⚙️ Funciones principales" default>
@@ -80,6 +83,8 @@ import TabItem from '@theme/TabItem';
 ### 🧾 AMT Vencido Impago (vista individual)
 
 ![Barra de tareas de tareas de un amt vencido/impago](/img/modulos/amt/amtVencidoImpagoBarra.png)
+![Vista de amt vencido/impago](/img/modulos/amt/amtVencidoImpagoVista_blur.png)
+
 
 <Tabs>
   <TabItem value="principales" label="⚙️ Funciones principales" default>

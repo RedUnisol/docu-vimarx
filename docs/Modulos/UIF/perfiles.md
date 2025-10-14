@@ -13,6 +13,7 @@ import TabItem from '@theme/TabItem';
 ## 🧭 Vista general
 
 ![Barra de tareas de perfiles](/img/modulos/uif/perfilesBarra.png)
+![Vista de perfiles](/img/modulos/uif/perfilesVista_blur.png)
 
 <Tabs>
   <TabItem value="principales" label="⚙️ Funciones principales" default>
@@ -49,6 +50,8 @@ import TabItem from '@theme/TabItem';
 ## 🧾 Vista individual de un Perfil
 
 ![Barra de tareas de un perfil](/img/modulos/uif/perfilBarra.png)
+![Vista de perfile](/img/modulos/uif/perfilVista_blur.png)
+
 
 <Tabs>
   <TabItem value="principales" label="⚙️ Funciones principales" default>

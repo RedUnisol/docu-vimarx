@@ -13,6 +13,7 @@ import TabItem from '@theme/TabItem';
 ## 🧭 Vista general
 
 ![Barra de tareas de movimientos](/img/modulos/amt/amtMovimientosBarra.png)
+![Vista de movimientos](/img/modulos/amt/amtMovimientosVista_blur.png)
 
 <Tabs>
   <TabItem value="principales" label="⚙️ Funciones principales" default>
@@ -37,6 +38,7 @@ import TabItem from '@theme/TabItem';
 ## 🧾 Vista individual
 
 ![Barra de tareas de un movimiento](/img/modulos/amt/amtMovimientoBarra.png)
+![Vista de una cancelacion](/img/modulos/amt/amtCancelacionVista_blur.png)
 
 <Tabs>
   <TabItem value="principales" label="⚙️ Funciones principales" default>

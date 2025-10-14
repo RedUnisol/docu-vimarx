@@ -18,7 +18,7 @@ Permite **generar, revisar, cobrar y contabilizar** cada resumen de cuenta, cons
 ## 📋 Vista general de Cuotas Sociales
 
 ![Barra de tareas cuotas sociales](/img/modulos/socio/cuotasSocialesBarra.png)
-
+![Vista cuotas sociales](/img/modulos/socio/cuotaSocialesVista_blur.png)
 
 <Tabs>
   <TabItem value="principales" label="⚙️ Funciones principales" default>
@@ -46,7 +46,7 @@ Permite **generar, revisar, cobrar y contabilizar** cada resumen de cuenta, cons
 ## 📋 Vista individual de una Cuota Social
 
 ![Barra de tareas de cuota social](/img/modulos/socio/cuotaSocialBarra.png)
-
+![Vista cuota social](/img/modulos/socio/cuotaSocialVista_blur.png)
 
 <Tabs>
   <TabItem value="principales" label="⚙️ Funciones principales" default>

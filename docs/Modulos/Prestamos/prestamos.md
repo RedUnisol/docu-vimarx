@@ -18,6 +18,7 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 ![Barra de tareas de prestamos](/img/modulos/prestamos/prestamosBarra.png)
+![Vista de prestamos](/img/modulos/prestamos/prestamosVista_blur.png)
 
 <Tabs>
 <TabItem value="Principales" label="⚙️ Funciones Principales">
@@ -76,6 +77,9 @@ import TabItem from '@theme/TabItem';
 ### 📑 Vista Individual de Préstamo
 
 ![Barra de tareas de un presamos](/img/modulos/prestamos/prestamoBarra.png)
+![Vista de prestamos](/img/modulos/prestamos/prestamoVista_blur.png)
+![Vista de prestamos](/img/modulos/prestamos/prestamoVista2_blur.png)
+
 
 <Tabs>
 <TabItem value="Principales" label="⚙️ Funciones Principales">

@@ -1,8 +1,10 @@
 ---
 slug: evaluateobj-evaluatelist
 title: "API DevExpress Parte 3: Extrayendo Datos Detallados (EvaluateObj y EvaluateList)"
-# authors: [techwriter]
-# tags: [API-DevExpress, Evaluacion, POST]
+date: 2025-10-21T16:00:00.000Z
+authors: [unisol]
+tags: [api]
+
 ---
 
 Los *endpoints* `EvaluateObj` y `EvaluateList` son fundamentales para obtener conjuntos de datos complejos. A diferencia de `Evaluate` (que devuelve un solo valor escalar), estos endpoints devuelven propiedades de objetos basadas en el criterio proporcionado en `cmd`.

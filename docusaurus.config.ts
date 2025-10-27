@@ -15,15 +15,15 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://redunisol.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/docu-vimarx/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'VIMARX', // Usually your GitHub org/user name.
-  projectName: 'VIMARX DOCUMENTACION', // Usually your repo name.
+  organizationName: 'RedUnisol', // GitHub org/user name
+  projectName: 'docu-vimarx', // Repo name
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -45,7 +45,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/RedUnisol/docu-vimarx/tree/main/',
         },
         blog: {
           showReadingTime: true,
@@ -56,7 +56,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/RedUnisol/docu-vimarx/tree/main/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -88,7 +88,7 @@ const config: Config = {
         {to: '/blog', label: 'blog', position: 'left'},
         {to: '/faq', label: 'Faq', position: 'left'},
         {
-          href: 'https://github.com/nsallitto/docu-vimarx',
+          href: 'https://github.com/RedUnisol/docu-vimarx',
           label: 'GitHub',
           position: 'right',
         },
@@ -132,7 +132,7 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/nsallitto/docu-vimarx',
+              href: 'https://github.com/RedUnisol/docu-vimarx',
             },
           ],
         },

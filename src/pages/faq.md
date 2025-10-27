@@ -6,7 +6,8 @@ A continuación encontrarás respuestas a las consultas más comunes relacionada
 
 ## 📑 Listados
 
-### 🧭 ¿Cómo ordeno los documentos de un listado?
+<details>
+  <summary><strong>🧭 ¿Cómo ordeno los documentos de un listado?</strong></summary>
 
 Para modificar el orden en que se imprimen o visualizan los documentos vinculados a un listado, seguí estos pasos:
 
@@ -14,18 +15,19 @@ Para modificar el orden en que se imprimen o visualizan los documentos vinculado
 2. Seleccioná el listado que querés modificar.  
 3. En la pestaña **Reportes ordenados**, vas a ver todos los documentos asociados.  
 4. En la columna **Orden**, ingresá el número correspondiente a cada documento (por ejemplo, **1**, **2**, **3**, etc.).  
-5. Si querés que todos los documentos se impriman en un único archivo, marcá la opción **“Imprimir en un solo documento”**, ubicada en la parte superior de la lista.  
-   - Si no la seleccionás, los documentos se imprimirán individualmente.
+5. Si querés que todos los documentos se impriman en un único archivo, marcá la opción **“Imprimir en un solo documento”**.
 
-:::tip[Sugerencia]
+:::warning[Sugerencia]
 Asigná números consecutivos para evitar confusiones en el orden final de impresión.
 :::
 
+</details>
 ---
 
 ## 💰 Préstamos
 
-### 🔄 ¿Cómo anular un préstamo?
+<details>
+   <summary><strong>🔄 ¿Cómo anular un préstamo?</strong></summary>
 
 Para anular un préstamo o crédito, asegurate de cumplir con los siguientes requisitos y pasos:
 
@@ -55,6 +57,6 @@ Si existen cobros, deben eliminarse previamente:
  Al eliminar cobros o asientos, **no quedará registro alguno en la base de datos**.  
 Asegurate de hacerlo únicamente si es estrictamente necesario.
 :::
-
+</details>
 ---
 

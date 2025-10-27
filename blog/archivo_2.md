@@ -1,17 +1,19 @@
 ---
 slug: evaluate-escalar
 title: "API DevExpress Parte 2: Consultando Valores Únicos y Agregaciones (Evaluate GET)"
-#authors: [techwriter]
-#tags: [API-DevExpress, Evaluacion, GET]
+date: 2025-10-21T12:00:00.000Z
+authors: [unisol]
+tags: [api]
 ---
 
 En esta segunda parte de la serie, nos centraremos en el *endpoint* `GET /api/Empresa/Evaluate`. Este endpoint está diseñado para devolver un valor único o escalar, como la cuenta total de registros, la suma de montos o la verificación booleana de una condición.
+
+<!-- truncate -->
 
 :::info
 📌 **Recordatorio:** El *payload* JSON es obligatorio, incluso para peticiones `GET`. Si necesitás repasar la estructura base, consultá la [Parte 1: Payload Universal](/blog/payload-universal-devxpress).
 :::
 
-<!-- truncate -->
 ---
 
 ## 🎯 1. Propósito y Comportamiento del Endpoint

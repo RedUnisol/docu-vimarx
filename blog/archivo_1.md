@@ -1,8 +1,9 @@
 ---
 slug: payload-universal-devxpress
 title: "Estructura del Payload JSON para la API DevExpress"
-# authors: [techwriter]
-# tags: [API-DevExpress, Evaluacion, Payload]
+date: 2025-10-21T08:00:00.000Z
+authors: [unisol]
+tags: [api]
 ---
 
 La **API** de DevExpress ofrece tres *endpoints* principales para realizar consultas de evaluación, agrupados bajo la suite `Evaluate`:
@@ -11,11 +12,11 @@ La **API** de DevExpress ofrece tres *endpoints* principales para realizar consu
 - `POST /api/Empresa/EvaluateObj`
 - `POST /api/Empresa/EvaluateList`
 
+<!-- truncate -->
+
 :::info
 Aunque cada uno tiene un propósito distinto (conteo/valores escalares, obtener un objeto, obtener una lista), todos comparten una misma **estructura universal de carga útil (payload) JSON**. Comprender esta estructura y sus reglas de sintaxis es clave para evitar errores y garantizar respuestas exitosas.
 :::
-
-<!-- truncate -->
 
 ---
 

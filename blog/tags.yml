@@ -17,3 +17,8 @@ hola:
   label: Hola
   permalink: /hola
   description: Hola tag description
+
+api:
+  label: API DevExpress
+  permalink: /api-devexpress
+  description: Conoce acerca de los endpoints y mas

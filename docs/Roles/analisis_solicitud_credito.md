@@ -3,7 +3,7 @@ sidebar_position: 5
 sidebar_label: Análisis de Solicitud de Crédito
 ---
 
-# 🧾 Proceso de Análisis de Solicitudes – Santa Fe
+# 🧾 Proceso de Análisis de Solicitudes
 
 :::info Descripción general
 El proceso de análisis de solicitudes es un flujo estructurado que inicia con la **verificación de riesgo del solicitante** y culmina con la **liquidación del crédito**.

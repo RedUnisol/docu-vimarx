@@ -3,6 +3,7 @@ import { useEffect, useRef } from "react";
 import clsx from "clsx";
 import Heading from "@theme/Heading";
 import styles from "./styles.module.css";
+import useBaseUrl from "@docusaurus/useBaseUrl";
 
 // type FeatureItem = {
 //   title: string;
@@ -18,7 +19,7 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: "Gestión Integral",
-    image: "/img/erp2.png",
+    image: "img/erp2.png",
     description: (
       <>
         Administra socios, préstamos, ahorros, y servicios desde un solo lugar.
@@ -28,7 +29,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: "Transparencia y Control",
-    image: "/img/erp.png",
+    image: "img/erp.png",
     description: (
       <>
         Reportes claros y en tiempo real sobre movimientos, balances y cuentas.
@@ -38,7 +39,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: "Atención a Socios",
-    image: "/img/erpSocio.png",
+    image: "img/erpSocio.png",
     description: <>Gestión rápida de solicitudes, reclamos y consultas.</>,
   },
 ];
@@ -47,7 +48,7 @@ function Feature({ title, image, description }: FeatureItem) {
   return (
     <div className={clsx("col col--4", styles.feature)}>
       <div className="text--center">
-        <img src={image} alt={title} className={styles.featureImg} />
+        <img src={useBaseUrl(image)} alt={title} className={styles.featureImg} />
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>

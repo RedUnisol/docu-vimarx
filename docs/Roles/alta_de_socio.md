@@ -15,7 +15,7 @@ Uno de los **roles principales del operador del área de Ventas** consiste en re
 
 ### 1. 🔍 Ingresar al módulo de socios
 
-Desde el menú principal, acceder a **Socios → Socios**.  
+Desde el menú principal, acceder a `Socios → Socios`.  
 Allí se visualizará la lista de todos los socios cargados en el sistema.
 
 ---

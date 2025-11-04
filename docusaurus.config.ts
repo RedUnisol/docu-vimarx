@@ -9,6 +9,16 @@ const config: Config = {
   tagline: 'Documentación oficial para dominar VIMARX',
   favicon: 'img/logo_favicon.ico',
 
+  //Agrego etiqueta meta de prueba para ALGOLIA
+  headTags: [
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'algolia-site-verification',
+        content: '0DC11FB37C89730F',
+      },
+    },
+  ],
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
     v4: false, // Improve compatibility with the upcoming Docusaurus v4

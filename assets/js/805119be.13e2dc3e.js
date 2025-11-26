@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[5160],{3411:e=>{e.exports=JSON.parse('{"tags":[{"label":"API DevExpress","permalink":"/docu-vimarx/blog/tags/api-devexpress","description":"Conoce acerca de los endpoints y mas","count":3}]}')}}]);

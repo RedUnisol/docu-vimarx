@@ -6,25 +6,193 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
+  /* --ifm-color-primary: #2e8555;
   --ifm-color-primary-dark: #29784c;
   --ifm-color-primary-darker: #277148;
   --ifm-color-primary-darkest: #205d3b;
   --ifm-color-primary-light: #33925d;
   --ifm-color-primary-lighter: #359962;
   --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
+  --ifm-code-font-size: 95%; */
+  --ifm-color-primary: #c1272d;
+  --ifm-color-primary-dark: #a11f24;
+  --ifm-color-primary-darker: #8c1a1f;
+  --ifm-color-primary-darkest: #6e1418;
+  --ifm-color-primary-light: #d43c42;
+  --ifm-color-primary-lighter: #e05258;
+  --ifm-color-primary-lightest: #f26a70;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
+  /* --ifm-color-primary: #25c2a0;
   --ifm-color-primary-dark: #21af90;
   --ifm-color-primary-darker: #1fa588;
   --ifm-color-primary-darkest: #1a8870;
   --ifm-color-primary-light: #29d5b0;
   --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+  --ifm-color-primary-lightest: #4fddbf; */
+  --ifm-color-primary: #f26a70;
+  --ifm-color-primary-dark: #e05258;
+  --ifm-color-primary-darker: #d43c42;
+  --ifm-color-primary-darkest: #c1272d;
+  --ifm-color-primary-light: #ff7f85;
+  --ifm-color-primary-lighter: #ff999e;
+  --ifm-color-primary-lightest: #ffb3b7;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+/* estilos de docusaurus.config */
+/* Cambiar color del título y subtítulo del Hero */
+.hero__title {
+  color: #ffffff !important;
+}
+
+.hero__subtitle {
+  color: #f1f1f1 !important;
+}
+
+/* Cambiar el color del botón si quieres */
+  /* background-color: #1eae5a; */
+
+.button.button--secondary {
+  background-color: #d14343;
+  color: white;
+  font-size: 18px;
+  padding: 6px 24px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+.button.button--secondary:hover {
+  background-color: #ad2b2b;
+}
+
+/*------------NAVBAR----------------  */
+/* NAVBAR con degradado elegante */
+.navbar {
+  /* background: linear-gradient(90deg, #0f2027, #203a43, #2c5364); */
+  background: linear-gradient(90deg, #1a1a2e, #16213e, #0f3460);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  padding: 12px 24px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+/* Logo */
+.navbar__brand {
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #ffffff;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.navbar__brand:hover {
+  color: #ff6666;
+}
+
+/* Links */
+.navbar__link {
+  color: #ffffff;
+  margin: 0 14px;
+  font-weight: 500;
+  font-size: 1rem;
+  position: relative;
+  padding: 6px 0;
+  transition: color 0.3s ease;
+}
+
+/* Hover con glow + subrayado animado */
+.navbar__link:hover {
+  color: #ff8080;
+  text-shadow: 
+    0 0 4px rgba(255, 128, 128, 0.7),
+    0 0 8px rgba(255, 128, 128, 0.5),
+    0 0 16px rgba(255, 128, 128, 0.3);
+}
+
+.navbar__link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: #ff6666;
+  transition: width 0.3s ease;
+}
+
+.navbar__link:hover::after {
+  width: 80%;
+}
+
+/* ✅ Resaltar la ruta actual */
+.navbar__link--active {
+  color: #ff6666;
+  text-shadow: 
+    0 0 4px rgba(255, 102, 102, 0.8),
+    0 0 8px rgba(255, 102, 102, 0.6),
+    0 0 16px rgba(255, 102, 102, 0.4);
+  font-weight: 700;
+}
+
+.navbar__link--active::after {
+  width: 80%;
+}
+
+/* ---------GRILLA CARDS----------- */
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.cards-grid details {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+  border-radius: 6px;
+  /* box-shadow: 0 1px 2px rgba(0,0,0,0.05); */
+  transition: box-shadow 0.2s ease;
+}
+.cards-grid details:hover {
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.cards-grid .step {
+  display: flex;
+  background: #f3f4f6; 
+  padding: .5rem; 
+  padding-top: 1.5rem;
+  border-Radius: 8px; 
+  box-shadow: 0 6px 4px rgba(0,0,0,0.06);
+  border-left: #0078d4 4px solid;
+}
+
+.checklist {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1rem;
+}
+
+.checklist li {
+  position: relative;
+  padding-left: 1.8rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.checklist li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #0078d4;
+  font-weight: bold;
+}
+
+

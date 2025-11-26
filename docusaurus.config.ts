@@ -6,24 +6,34 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'VIMARX',
-  tagline: 'El ERP que NECESITAS',
-  favicon: 'img/favicon.ico',
+  tagline: 'Documentación oficial para dominar VIMARX',
+  favicon: 'img/logo_favicon.ico',
 
+  //Agrego etiqueta meta de prueba para ALGOLIA
+  headTags: [
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'algolia-site-verification',
+        content: '0DC11FB37C89730F',
+      },
+    },
+  ],
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
-    v4: true, // Improve compatibility with the upcoming Docusaurus v4
+    v4: false, // Improve compatibility with the upcoming Docusaurus v4
   },
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://redunisol.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/docu-vimarx/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'RedUnisol', // GitHub org/user name
+  projectName: 'docu-vimarx', // Repo name
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -32,8 +42,8 @@ const config: Config = {
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'es',
+    locales: ['es'],
   },
 
   presets: [
@@ -45,7 +55,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/RedUnisol/docu-vimarx/tree/main/',
         },
         blog: {
           showReadingTime: true,
@@ -56,7 +66,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/RedUnisol/docu-vimarx/tree/main/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -76,7 +86,7 @@ const config: Config = {
       title: 'VIMARX',
       logo: {
         alt: 'VIMARX Logo',
-        src: 'img/logo.svg',
+        src: 'img/logo_vimarx_transparente.png',
       },
       items: [
         {
@@ -85,9 +95,10 @@ const config: Config = {
           position: 'left',
           label: 'Docs',
         },
-        {to: '/blog', label: 'Faq', position: 'left'},
+        {to: '/blog', label: 'blog', position: 'left'},
+        {to: '/faq', label: 'Faq', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/RedUnisol/docu-vimarx',
           label: 'GitHub',
           position: 'right',
         },
@@ -101,12 +112,12 @@ const config: Config = {
           items: [
             {
               label: 'Tutorial',
-              to: '/docs/intro',
+              to: '/docs/category/modulos',
             },
           ],
         },
         {
-          title: 'Community',
+          title: 'Faq',
           items: [
             {
               label: 'Stack Overflow',
@@ -131,12 +142,12 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/RedUnisol/docu-vimarx',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} VIMARX, Inc. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,

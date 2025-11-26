@@ -1,0 +1,8 @@
+{
+  "label": "Configuraciones",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "Parámetros y ajustes necesarios para personalizar el comportamiento del sistema."
+  }
+}

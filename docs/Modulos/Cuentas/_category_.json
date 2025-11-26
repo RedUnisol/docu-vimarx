@@ -1,0 +1,8 @@
+{
+  "label": "Cuentas",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "Módulo Cuentas: Gestión Integral de Cuentas AMV y Movimientos"
+  }
+}

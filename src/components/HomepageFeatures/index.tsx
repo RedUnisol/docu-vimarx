@@ -1,51 +1,54 @@
-import type {ReactNode} from 'react';
-import clsx from 'clsx';
-import Heading from '@theme/Heading';
-import styles from './styles.module.css';
+import type { ReactNode } from "react";
+import { useEffect, useRef } from "react";
+import clsx from "clsx";
+import Heading from "@theme/Heading";
+import styles from "./styles.module.css";
+import useBaseUrl from "@docusaurus/useBaseUrl";
 
+// type FeatureItem = {
+//   title: string;
+//   Svg: React.ComponentType<React.ComponentProps<'svg'>>;
+//   description: ReactNode;
+// };
 type FeatureItem = {
   title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
+  image: string; // Para PNG, JPG, etc.
   description: ReactNode;
 };
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Facil de usar',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: "Gestión Integral",
+    image: "img/erp2.png",
     description: (
       <>
-        Aca podemos poner lo que consideremos, agregar o quitar mas cards
+        Administra socios, préstamos, ahorros, y servicios desde un solo lugar.
+        Todo centralizado para que no pierdas tiempo.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: "Transparencia y Control",
+    image: "img/erp.png",
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Reportes claros y en tiempo real sobre movimientos, balances y cuentas.
+        Ten el control total de la mutual.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
-      </>
-    ),
+    title: "Atención a Socios",
+    image: "img/erpSocio.png",
+    description: <>Gestión rápida de solicitudes, reclamos y consultas.</>,
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({ title, image, description }: FeatureItem) {
   return (
-    <div className={clsx('col col--4')}>
+    <div className={clsx("col col--4", styles.feature)}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <img src={useBaseUrl(image)} alt={title} className={styles.featureImg} />
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
@@ -56,10 +59,33 @@ function Feature({title, Svg, description}: FeatureItem) {
 }
 
 export default function HomepageFeatures(): ReactNode {
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add(styles.visible);
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
+
+    const features = containerRef.current?.querySelectorAll(
+      `.${styles.feature}`
+    );
+    features?.forEach((el) => observer.observe(el));
+
+    return () => observer.disconnect(); // ✅ cleanup
+  }, []);
+
   return (
     <section className={styles.features}>
       <div className="container">
-        <div className="row">
+        <div className="row" ref={containerRef}>
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}

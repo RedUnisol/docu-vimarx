@@ -7,7 +7,11 @@
     "start": "docusaurus start",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
-    "deploy": "docusaurus deploy",
+    "deploy": "cross-env GIT_USER=nsallitto USE_SSH=false docusaurus deploy",
+    "build:ghp": "docusaurus build --out-dir build-ghp",
+    "deploy:ssh": "cross-env GIT_USER= GIT_PASS= USE_SSH=true docusaurus deploy --out-dir build-ghp",
+    "deploy:ssh:key": "cross-env GIT_USER= GIT_PASS= USE_SSH=true GIT_SSH_COMMAND=\"ssh -o IdentitiesOnly=yes\" docusaurus deploy --out-dir build-ghp",
+    "deploy:token": "cross-env USE_SSH=false GIT_USER=nsallitto docusaurus deploy --out-dir build-ghp",
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
@@ -27,6 +31,7 @@
     "@docusaurus/module-type-aliases": "3.8.1",
     "@docusaurus/tsconfig": "3.8.1",
     "@docusaurus/types": "3.8.1",
+    "cross-env": "^7.0.3",
     "typescript": "~5.6.2"
   },
   "browserslist": {

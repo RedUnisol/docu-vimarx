@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-sidebar_label: Proceso de Débito
+sidebar_label: Proceso de Débito (Importación)
 ---
 
 # 💳 Importar Proceso de Débitos
@@ -28,7 +28,7 @@ Esto abrirá una vista con todos los débitos asociados a dicha plantilla.
 
 ---
 
-### 3. 🆕 Crear un nuevo proceso de débito
+### 3. 🆕 Crear un nuevo proceso de débito 
 
 Hacer clic en el botón **“Nuevo”**.
 
